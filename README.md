@@ -133,3 +133,10 @@ Deep-Audio-Classifier/
 
 **Note:** The folder names `Parsed_Capuchinbird_Clips` and `Parsed_Not_Capuchinbird_Clips` are hardcoded in the script. You **must** use these exact folder names for your positive and negative samples, even if your target sound isn't a bird.
 
+### 4. Run the Script
+
+Once your data is in place and dependencies are installed, simply run the script:
+
+```bash
+python your_script_name.py
+The script will train the model, plot the training history, and then create a results.csv file in your root directory.
