@@ -59,8 +59,8 @@ The core of the project involves converting audio signals into **spectrograms** 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone (https://github.com/Dhy4n-117/Deep-Audio-Classifier.git)
+    cd Deep-Audio-Classifier
     ```
 
 2.  **Create a virtual environment (Recommended):**
