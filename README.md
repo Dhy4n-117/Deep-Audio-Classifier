@@ -94,11 +94,6 @@ You should **replace** the *existing* "3. Data Structure" section in your README
 
 This project requires three sets of data, which you must provide in the following folder structure:
 
-```
-<img width="1683" height="749" alt="image" src="https://github.com/user-attachments/assets/008ffe3a-4aac-44e0-b0cf-d87b363c9f52" />
-
-```
-
 #### 1\. Positive Training Data (`Parsed_Capuchinbird_Clips`)
 
   * **Purpose:** To teach the model what your target sound *is*.
