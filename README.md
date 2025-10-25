@@ -93,7 +93,26 @@ You should **replace** the *existing* "3. Data Structure" section in your README
 ### 3\. Datasets & Folder Structure
 
 This project requires three sets of data, which you must provide in the following folder structure:
-
+```
+Deep-Audio-Classifier/
+│
+├── data/
+│   │
+│   ├── Parsed_Capuchinbird_Clips/    # 1. POSITIVE Training Data
+│   │   ├── clip1.wav
+│   │   └── ...
+│   │
+│   ├── Parsed_Not_Capuchinbird_Clips/  # 2. NEGATIVE Training Data
+│   │   ├── not_clip1.wav
+│   │   └── ...
+│   │
+│   └── Forest Recordings/              # 3. INFERENCE Data
+│       ├── recording_00.mp3
+│       └── ...
+│
+├── classifier.py   # The main Python script
+└── ...
+```
 #### 1\. Positive Training Data (`Parsed_Capuchinbird_Clips`)
 
   * **Purpose:** To teach the model what your target sound *is*.
