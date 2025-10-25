@@ -95,7 +95,7 @@ You should **replace** the *existing* "3. Data Structure" section in your README
 This project requires three sets of data, which you must provide in the following folder structure:
 
 ```
-your-repo-name/
+Deep-Audio-Classifier/
 │
 ├── data/
 │   │
@@ -111,7 +111,7 @@ your-repo-name/
 │       ├── recording_00.mp3
 │       └── ...
 │
-├── your_script_name.py   # The main Python script
+├── classifier.py   # The main Python script
 └── ...
 ```
 
