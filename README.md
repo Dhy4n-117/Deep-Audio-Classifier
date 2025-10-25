@@ -95,24 +95,8 @@ You should **replace** the *existing* "3. Data Structure" section in your README
 This project requires three sets of data, which you must provide in the following folder structure:
 
 ```
-Deep-Audio-Classifier/
-│
-├── data/
-│   │
-│   ├── Parsed_Capuchinbird_Clips/    # 1. POSITIVE Training Data
-│   │   ├── clip1.wav
-│   │   └── ...
-│   │
-│   ├── Parsed_Not_Capuchinbird_Clips/  # 2. NEGATIVE Training Data
-│   │   ├── not_clip1.wav
-│   │   └── ...
-│   │
-│   └── Forest Recordings/              # 3. INFERENCE Data
-│       ├── recording_00.mp3
-│       └── ...
-│
-├── classifier.py   # The main Python script
-└── ...
+<img width="1683" height="749" alt="image" src="https://github.com/user-attachments/assets/008ffe3a-4aac-44e0-b0cf-d87b363c9f52" />
+
 ```
 
 #### 1\. Positive Training Data (`Parsed_Capuchinbird_Clips`)
@@ -134,3 +118,4 @@ Deep-Audio-Classifier/
   * **Output:** The script will analyze these files and generate a `results.csv` listing the detected event counts for each file.
 
 **Note:** The folder names `Parsed_Capuchinbird_Clips` and `Parsed_Not_Capuchinbird_Clips` are hardcoded in the script. You **must** use these exact folder names for your positive and negative samples, even if your target sound isn't a bird.
+
