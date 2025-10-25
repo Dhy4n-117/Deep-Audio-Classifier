@@ -84,6 +84,53 @@ The core of the project involves converting audio signals into **spectrograms** 
 
 ### 3. Data Structure
 
-This script assumes a specific folder structure, as hardcoded in the file paths.
+Got it. Here is an updated `Datasets & Folder Structure` section for your README. This new section is more detailed and clearly explains what each dataset is for.
 
-**Note:** The script uses the folder names `Parsed_Capuchinbird_Clips` and `Parsed_Not_Capuchinbird_Clips` for positive and negative samples, respectively. You can place **any** target audio data in these folders to train your own classifier.
+You should **replace** the *existing* "3. Data Structure" section in your README with this one.
+
+-----
+
+### 3\. Datasets & Folder Structure
+
+This project requires three sets of data, which you must provide in the following folder structure:
+
+```
+your-repo-name/
+│
+├── data/
+│   │
+│   ├── Parsed_Capuchinbird_Clips/    # 1. POSITIVE Training Data
+│   │   ├── clip1.wav
+│   │   └── ...
+│   │
+│   ├── Parsed_Not_Capuchinbird_Clips/  # 2. NEGATIVE Training Data
+│   │   ├── not_clip1.wav
+│   │   └── ...
+│   │
+│   └── Forest Recordings/              # 3. INFERENCE Data
+│       ├── recording_00.mp3
+│       └── ...
+│
+├── your_script_name.py   # The main Python script
+└── ...
+```
+
+#### 1\. Positive Training Data (`Parsed_Capuchinbird_Clips`)
+
+  * **Purpose:** To teach the model what your target sound *is*.
+  * **Format:** Short `.wav` files (ideally 2-5 seconds) that clearly contain the audio event you want to detect.
+  * **Label:** The script automatically assigns these a label of `1`.
+
+#### 2\. Negative Training Data (`Parsed_Not_Capuchinbird_Clips`)
+
+  * **Purpose:** To teach the model what your target sound *is not*. This is just as important\!
+  * **Format:** Short `.wav` files containing background noise, other similar-sounding (but incorrect) events, or silence.
+  * **Label:** The script automatically assigns these a label of `0`.
+
+#### 3\. Inference Data (`Forest Recordings`)
+
+  * **Purpose:** This is the data you want to analyze *after* the model is trained.
+  * **Format:** Long-format `.mp3` or `.wav` files that the script will scan for the target sound.
+  * **Output:** The script will analyze these files and generate a `results.csv` listing the detected event counts for each file.
+
+**Note:** The folder names `Parsed_Capuchinbird_Clips` and `Parsed_Not_Capuchinbird_Clips` are hardcoded in the script. You **must** use these exact folder names for your positive and negative samples, even if your target sound isn't a bird.
